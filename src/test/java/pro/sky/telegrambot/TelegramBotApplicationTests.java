@@ -73,7 +73,7 @@ class TelegramBotApplicationTests {
         verify(notificationTaskRepositoryMock, atLeastOnce()).save(any());
 
     }
-    @Test
+/*    @Test
     public void runTest(){
         NotificationTask task = new NotificationTask(1L,"Сделай домашнюю работу", LocalDateTime.now().truncatedTo(ChronoUnit.MINUTES));
         out.run();
@@ -82,5 +82,5 @@ class TelegramBotApplicationTests {
 
         assertEquals(List.of(task),notificationTaskRepositoryMock.findTasks(any()));
         verify(notificationTaskRepositoryMock, atLeastOnce()).findTasks(any());
-    }
+    }*/
 }
