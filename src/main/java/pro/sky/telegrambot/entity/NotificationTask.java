@@ -1,4 +1,4 @@
-package pro.sky.telegrambot.model;
+package pro.sky.telegrambot.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -15,8 +15,7 @@ public class NotificationTask {
     private String text;
     private LocalDateTime scheduledDispatchDateTime;
 
-    public NotificationTask(Integer id, Long chatId, String text, LocalDateTime scheduledDispatchDateTime) {
-        this.id = id;
+    public NotificationTask(Long chatId, String text, LocalDateTime scheduledDispatchDateTime) {
         this.chatId = chatId;
         this.text = text;
         this.scheduledDispatchDateTime = scheduledDispatchDateTime;
